@@ -8,7 +8,7 @@ https://gitlab.com/ENKI-portal/xMELTS => Requires to register (if by any interes
 The matlab program MELTs.m is a LAUNCHER of the thermodynamic minimisation program MELTS. 
 
 Using MELTs.m provides the opportunity to compute a large set of composition directly from a spreadsheet. Example of input spreadsheet can be found in Cumulate.csv. 
-Cumulates_batch, Cumulates_frac and Cumulates_Spec folders are examples of the 3 type of calculation I implemented for my studies. You can see the output formats and how everything is put in order depending on the water content and crystallinity.
+Running MELTs.m with the Cumulate.csv file will create a Cumulates_batch, Cumulates_frac and Cumulates_Spec folders, which give an example of the 3 type of calculation I implemented (e.g., fractionation, equilibrium and frac/equilibrium switch depending on melt fraction). You can see the output formats and how everything is put in order depending on the water content and crystallinity.
 The Cumulate.csv with a fO2 buffer FMQ +1 that you have here is an example of a non-failing MELTs calculation. Failing calclulations occurs when MELTS fail to converge to a reasonable Gibbs minmization and fall in an endless loop. The reasons are unknown and from the many tests I made, it varies according to the fO2 or water content.
 When that happens, you have to hit ctrl+C in the command window of matlab to kill the simulation. I am currently working with Juliana Troch to circumvent the endless loop (although not correcting the problem).  
 
